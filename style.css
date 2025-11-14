@@ -1,16 +1,87 @@
+/* ===== Global ===== */
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
+  background-color: #fdf6e3;
+  color: #333;
 }
 
-#verseContainer {
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin-bottom: 20px;
-  min-height: 200px;
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2e4053;
 }
 
+/* ===== Buttons ===== */
 button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
   padding: 10px 20px;
   font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* ===== Input Fields ===== */
+input[type="text"], input[type="email"], select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ===== Login / Phase Form ===== */
+#loginForm, #phaseSelect {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* ===== Table Page ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 12px;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+td button {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+/* ===== Verse Reading Page ===== */
+#verseText {
+  border: 1px solid #ccc;
+  padding: 15px;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  background-color: #fff8dc;
+  border-radius: 5px;
+}
+
+/* ===== Finish Button ===== */
+#finishBtn {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
 }
