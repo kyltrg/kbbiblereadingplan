@@ -27,7 +27,7 @@ document.getElementById('nextChapterBtn').addEventListener('click', () => {
   let timeSpent = (Date.now() - startTime) / 1000;
   if(timeSpent >= minTime && interacted){
     // Send progress to Google Sheets
-    fetch('YOUR_GOOGLE_SCRIPT_URL', {
+    fetch(https://script.google.com/macros/s/AKfycbxyBowi6yUP8nyt2AhRqhXQrkNPgi0PrB-6FlCsmMPL53rY0ssxnv9t4uFmvDJ6Ris8/exec, {
       method: 'POST',
       body: JSON.stringify({
         userId: 'u001', // Example user
